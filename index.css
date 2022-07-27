@@ -7,10 +7,12 @@ html,body{
 header{
     display: flex;
     height: 10%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .navigation-mes{
+    display: flex;
+    justify-content: center;
     width: 20%;
 }
 h1{
