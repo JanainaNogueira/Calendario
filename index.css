@@ -1,14 +1,16 @@
-html,body{
+*{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+html,body{
     font-family:'IBM Plex Serif', serif;
     height: 100%;
-    box-sizing: border-box;
 }
 /*header*/
 header{
     display: flex;
-    height: 10%;
+    height: 15%;
     justify-content: space-between;
     align-items: center;
 }
@@ -23,6 +25,7 @@ h1{
 /*main*/
     /*dias da semana*/
     .calendar{
+        position: absolute;
         display:flex;
         align-items: center;
         flex-direction: column;
@@ -63,4 +66,20 @@ h1{
         background-color: #C8D9A8;
         color: #fff;
         margin: 0.3% 0.1% 0.2% 0.1%;
+    }
+    /*aside*/
+    .menu-tasks{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 85%;
+        width: 2%;
+        left: 98%;
+    }
+    .arrow-button{
+        display: flex;
+    }
+    .arrow{
+        width: 100%;
+        height: 100%;
     }
