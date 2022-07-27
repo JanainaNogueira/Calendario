@@ -16,3 +16,29 @@ header{
 h1{
     color:#8AA851;
 }
+/*main*/
+.mes{
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 3%;
+}
+.semana{
+    display: flex;
+}
+.semana tbody{
+    width: 100%;
+}
+.semana tr{
+    display: flex;
+    justify-content: space-around;
+}
+.semana tr th{
+    background-color: #A5BF76;
+    color: #fff;
+    display: flex;
+    width: 14.28%;
+    margin: 0 0.5% 0 0.5%;
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+}
