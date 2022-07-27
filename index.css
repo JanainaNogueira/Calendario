@@ -2,6 +2,8 @@ html,body{
     padding: 0;
     margin: 0;
     font-family:'IBM Plex Serif', serif;
+    height: 100%;
+    box-sizing: border-box;
 }
 /*header*/
 header{
@@ -18,3 +20,47 @@ header{
 h1{
     color:#8AA851;
 }
+/*main*/
+    /*dias da semana*/
+    .calendar{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+    }
+    .month{
+        display: flex;
+        width: 80%;
+        height: 100%;
+    }
+    .month tbody{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .month tr{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .day-week{
+        background-color: #A5BF76;
+        color: #fff;
+        display: flex;
+        width: 12%;
+        margin: 0 0.1% 0 0.1%;
+        border-radius: 10px 10px 0 0;
+        justify-content: center;
+    }
+    /*dias do mês*/
+    .days-month{
+        height: 18%;
+    }
+    .day{ 
+        display: flex;
+        width: 12%;
+        background-color: #C8D9A8;
+        color: #fff;
+        margin: 0.3% 0.1% 0.2% 0.1%;
+    }
