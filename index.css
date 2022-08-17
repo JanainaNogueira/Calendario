@@ -29,7 +29,7 @@ h1{
         display:flex;
         align-items: center;
         flex-direction: column;
-        width: 100%;
+        width: 98%;
         height: 80%;
     }
     .month{
@@ -47,7 +47,7 @@ h1{
         justify-content: space-evenly;
         width: 100%;
     }
-    .day-week{
+    .week th{
         background-color: #A5BF76;
         color: #fff;
         display: flex;
@@ -60,7 +60,7 @@ h1{
     .days-month{
         height: 18%;
     }
-    .day{ 
+    .days-month td{ 
         display: flex;
         width: 12%;
         background-color: #C8D9A8;
