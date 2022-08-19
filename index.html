@@ -14,9 +14,9 @@
 </head>
 <body>
     <header>
-        <div class="navigation-month">mês anterior</div>
+        <div class="navigation-month" id="last-month" onclick="troca_mes">mês anterior</div>
         <h1>Mês</h1>
-        <div class="navigation-month">proximo mês</div>
+        <div class="navigation-month" id="next-month" onclick="troca_mes">proximo mês</div>
     </header>
     <main class="calendar">
         <table class="month">
@@ -45,5 +45,6 @@
             <img class="arrow" src="./assets/img/leftarrow_114228.svg"/>
         </a>
     </aside>
+    <script src="./index.js" type="text/javascript"></script>
 </body>
 </html>
