@@ -1,11 +1,15 @@
-function seleciona_data(){
-    var date = new Date();
-    var month = date.getMonth();
+const months = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto",
+                "Setembro","Outubro","Novembro","Dezembro"];
+var date = new Date();
+var month = date.getMonth();
+
+function last_month(){
+    month++
     console.log(month);
 }
-
-function troca_mes(){
-    seleciona_data();
+function next_month(){
+    month--
+    console.log(month);
 }
-document.getElementById('last-month').addEventListener("click",troca_mes);
-document.getElementById('next-month').addEventListener("click",troca_mes);
+document.getElementById('last-month').addEventListener("click",last_month);
+document.getElementById('next-month').addEventListener("click",next_month);
