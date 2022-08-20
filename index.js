@@ -4,6 +4,10 @@ const months = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","A
 var date = new Date();
 var month = date.getMonth();
 
+function load(){
+    month_name.innerHTML=months[month];
+}
+
 //avançar e retroceder meses
 function last_month(){
     if(month<=0){
@@ -28,3 +32,5 @@ document.getElementById('next-month').addEventListener("click",next_month);
 
 //Pega o titulo do mês
 var month_name = document.getElementById("month-name")
+
+window.addEventListener("load",load)
