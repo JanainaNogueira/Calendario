@@ -6,11 +6,13 @@
 html,body{
     font-family:'IBM Plex Serif', serif;
     height: 100%;
+    background-image: url("./assets/img/background.png");
+    background-size:cover;
 }
 /*header*/
 header{
     display: flex;
-    height: 15%;
+    height: 20%;
     justify-content: space-between;
     align-items: center;
 }
@@ -21,6 +23,8 @@ header{
 }
 h1{
     color:#8AA851;
+    font-size: 80px;
+    font-weight: 400;
 }
 /*main*/
     /*dias da semana*/
@@ -30,7 +34,7 @@ h1{
         align-items: center;
         flex-direction: column;
         width: 98%;
-        height: 80%;
+        height: 75%;
     }
     .month{
         display: flex;
@@ -72,7 +76,7 @@ h1{
         display: flex;
         justify-content: center;
         position: relative;
-        height: 85%;
+        height: 70%;
         width: 2%;
         left: 98%;
     }
