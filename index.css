@@ -52,7 +52,7 @@ h1{
         width: 100%;
     }
     .week th{
-        background-color: #A5BF76;
+        background-color: #8AA851;
         color: #fff;
         display: flex;
         width: 12%;
@@ -70,6 +70,9 @@ h1{
         background-color: #C8D9A8;
         color: #fff;
         margin: 0.3% 0.1% 0.2% 0.1%;
+        font-weight:400;
+        font-size:larger;
+        padding:0 0.5% 0 0.5%;
     }
     /*aside*/
     .menu-tasks{
