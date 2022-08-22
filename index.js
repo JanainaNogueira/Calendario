@@ -11,9 +11,16 @@ function load(){
 }
 function update_month(month,year){
     let firstDay = new Date(year, month, 1).getDay()-1;
+    let lastDay = new Date(year,month + 1,0).getDate()
     for(var i=-firstDay,index=0;i<(42-firstDay);i++,index++){
         let day = new Date(year,month,i).getDate()
-        document.getElementsByTagName('td')[index].innerHTML= day;
+        let tagTd = document.getElementsByTagName('td')[index]
+        if((i<1)||(i>lastDay)){
+            tagTd.style.backgroundColor='rgba(134, 134, 134, 0.87)'
+        }else{
+            tagTd.style.backgroundColor='#C8D9A8'
+        }
+        tagTd.innerHTML= day;
     }
 }
 
