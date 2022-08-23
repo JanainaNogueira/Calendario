@@ -6,13 +6,17 @@
 html,body{
     font-family:'IBM Plex Serif', serif;
     height: 100%;
+    width: 100%;
     background-image: url("../assets/img/background.png");
     background-size:cover;
+    display: flex;
+    
 }
 /*header*/
 header{
     display: flex;
     height: 20%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -21,8 +25,18 @@ header{
     justify-content: center;
     width: 20%;
 }
+.navigation-month:hover{
+    cursor: pointer;
+}
 h1{
     color:#8AA851;
     font-size: 80px;
     font-weight: 400;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
 }
