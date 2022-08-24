@@ -1,7 +1,7 @@
 
 /*aside*/
 .menu-tasks{
-    display: flex;
+    display:none;
     height: 100%;
     width: 20%;
     left: 85%;
@@ -12,10 +12,10 @@
 /*seta*/
 .arrow-button{
     display: flex;
-    width: 10%;
+    position: relative;
+    width: 2%;
 }
 .arrow{
-    transform: rotate(180deg);
     width: 100%;
     height: 100%;
 }
