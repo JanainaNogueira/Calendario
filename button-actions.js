@@ -1,12 +1,14 @@
-let estado = true;
+let state = false;
 function openSideBar(){
     let arrowButton = document.getElementById("menu")
-    
-    if(estado == true){
+    let rotateArrow = document.getElementById("arrow")
+    if(state === false){
         arrowButton.style.display="flex";
-        estado = false;
+        rotateArrow.style.transform="rotate(180deg)"
+        state = !state;
     }else{
         arrowButton.style.display="none";
-        estado = true;
+        rotateArrow.style.transform="rotate(0deg)"
+        state = false;
     }
 }
