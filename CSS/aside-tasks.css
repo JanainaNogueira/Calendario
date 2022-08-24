@@ -1,0 +1,98 @@
+
+/*aside*/
+.menu-tasks{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    left: 85%;
+    background-color: #F7FFEF;
+    box-shadow: 0 1em 1em #868686;
+    border-left: 7px double #2e3d11;
+}
+/*seta*/
+.arrow-button{
+    display: flex;
+    width: 10%;
+}
+.arrow{
+    transform: rotate(180deg);
+    width: 100%;
+    height: 100%;
+}
+.arrow:hover{
+    cursor: pointer;
+}
+/*area das tarefas*/
+.tasks-bar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.tasks-bar h2{
+    color: #668037;
+    margin-top: 5%;
+    border-bottom: 1px solid #181d0f;
+}
+/*tarefas*/
+.tasks-bar__tasks{
+    width: 94%;
+    height: 83%;
+    list-style: none;
+    margin: 2% 0 2% 0;
+    overflow: auto;
+}
+.tasks-bar__tasks li{
+    display: flex;
+    align-items: center;
+    margin: 5% 0 5% 0;
+    width: 100%;
+    height:4%;
+}
+.checkbox-container{
+    display: flex;
+    width: 100%;
+    height:100%;
+}
+.checkbox-container:hover input ~.marker{
+    background-color: #2e3d11;
+    cursor: pointer;
+}
+.checkbox-container input:checked ~ .marker{
+    background-color: #8AA851;
+}
+.marker{
+    position: relative;
+    height: 60%;
+    width: 7.5%;
+    top: 10%;
+    border: 1px dashed #000000;
+    background-color: none;
+    border-radius: 10px;
+}
+.check{
+    display: none;
+}
+.text-task{
+    width: 90%;
+    margin-left: 5%;
+    background-color: #F7FFEF;
+    height:100%;
+    border:none;
+    border-bottom: 1px solid black;
+}
+
+/*adicionar tarefas*/
+.add-task{
+    width: 90%;
+    height: 4.5%;
+    background-color: #8AA851;
+    border-radius: 7px;
+    border: none;
+    color: #ffffff;
+    box-shadow: 0 0.4em 0.4em  #868686;
+}
+.add-task:hover{
+    cursor: pointer;
+}
