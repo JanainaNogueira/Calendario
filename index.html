@@ -89,12 +89,12 @@
         </table>
     </main>
     </div>
-    <a class="arrow-button" onclick="openSideBar()">
+    <a id="arrow" class="arrow-button" onclick="openSideBar()">
         <img class="arrow" src="./assets/img/leftarrow_114228.svg"/>
     </a>
     <aside class="menu-tasks" id="menu">
+        <h2>Tarefas do mês</h2>
         <div class="tasks-bar">
-            <h2>Tarefas do mês</h2>
             <ul class="tasks-bar__tasks">
                 <li>
                     <label class="checkbox-container">
@@ -104,8 +104,9 @@
                     </label>
                 </li>
             </ul>
+        </div>    
             <button class="add-task">Adicionar tarefa</button>
-        </div>
+        
     </aside>
     <script src="./calendar.js" type="text/javascript"></script>
     <script src="./button-actions.js" type="text/javascript"></script>
