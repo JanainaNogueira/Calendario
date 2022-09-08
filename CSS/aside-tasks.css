@@ -41,7 +41,7 @@
 /*tarefas*/
 .tasks-bar__tasks{
     width: 94%;
-    height: 5%;
+    height: 100%;
     list-style: none;
     margin: 2% 0 2% 0;
 }
@@ -49,7 +49,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height:100%;
+    height:5%;
 }
 .checkbox-container{
     display: flex;
@@ -65,7 +65,7 @@
 }
 .marker{
     position: relative;
-    height: 54%;
+    height: 50%;
     width: 6%;
     top: 15%;
     border: 1px dashed #000000;
@@ -83,6 +83,7 @@
     border:none;
     border-bottom: 1px solid black;
     font-size: medium;
+    text-decoration:none;
 }
 
 /*adicionar tarefas*/
