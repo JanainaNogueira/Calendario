@@ -17,5 +17,4 @@ function addTask(){
     inputText.className = "text-task"
 
     inputMarker.type = "checkbox"
-    console.log(document.querySelector('ul').appendChild(li))
 }
