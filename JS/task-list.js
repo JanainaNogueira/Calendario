@@ -17,4 +17,15 @@ function addTask(){
     inputText.className = "text-task"
 
     inputMarker.type = "checkbox"
+    inputText.type = "text"
 }
+
+document.querySelector('span').addEventListener('click', () => {
+    let textDecor = document.querySelector(".text-task").style
+    if(textDecor.textDecoration === "none"){
+        textDecor.textDecoration="line-through"
+    }else{
+        textDecor.textDecoration="none"
+    }
+
+});
