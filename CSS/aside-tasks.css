@@ -75,6 +75,9 @@
 .check{
     display: none;
 }
+.checked{
+    text-decoration: line-through;
+}
 .text-task{
     width: 90%;
     margin-left: 5%;
@@ -83,9 +86,7 @@
     border:none;
     border-bottom: 1px solid black;
     font-size: medium;
-    text-decoration:none;
 }
-
 /*adicionar tarefas*/
 .add-task{
     position: relative;
