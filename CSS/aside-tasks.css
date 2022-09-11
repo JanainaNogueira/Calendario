@@ -56,11 +56,11 @@
     width: 100%;
     height:100%;
 }
-.checkbox-container:hover input ~.marker{
+.marker:hover{
     background-color: #2e3d11;
     cursor: pointer;
 }
-.checkbox-container input:checked ~ .marker{
+input:checked ~ .marker{
     background-color: #8AA851;
 }
 .marker{
