@@ -19,9 +19,8 @@ function addTask(){
     inputMarker.type = "checkbox"
     inputText.type = "text"
 }
-
-document.addEventListener("click", (e) =>{
-    const targetClick = e.target //identifica o elemento
+document.querySelector('.tasks-bar__tasks').addEventListener('click',(e)=>{
+    const targetClick=e.target //identifica o elemento
     const textDecor = targetClick.closest("li")
     if(targetClick.classList.contains("marker")){
         textDecor.classList.toggle("checked")
