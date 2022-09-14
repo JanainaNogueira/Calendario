@@ -17,7 +17,10 @@ function addTask(){
     inputText.classList.add("text-task")
 
     inputMarker.type = "checkbox"
+    
     inputText.type = "text"
+    inputText.value =""  
+    inputText.id=document.querySelectorAll(".text-task").length
 }
 document.querySelector('.tasks-bar__tasks').addEventListener('click',(e)=>{
     const targetClick=e.target //identifica o elemento
