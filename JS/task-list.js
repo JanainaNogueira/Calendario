@@ -11,10 +11,21 @@ function addTask(){
     li.appendChild(label)
     document.querySelector('ul').appendChild(li)
 
-    label.className = "checkbox-container"
-    inputMarker.className = "check"
-    span.className = "marker"
-    inputText.className = "text-task"
+    label.classList.add("checkbox-container")
+    inputMarker.classList.add("check")
+    span.classList.add("marker")
+    inputText.classList.add("text-task")
 
     inputMarker.type = "checkbox"
+    
+    inputText.type = "text"
+    inputText.value =""  
+    inputText.id=document.querySelectorAll(".text-task").length
 }
+document.querySelector('.tasks-bar__tasks').addEventListener('click',(e)=>{
+    const targetClick=e.target //identifica o elemento
+    const textDecor = targetClick.closest("li")
+    if(targetClick.classList.contains("marker")){
+        textDecor.classList.toggle("checked")
+    }
+})
